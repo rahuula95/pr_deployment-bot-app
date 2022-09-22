@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form-v4 by Colorlib</title>
+	{{!-- <!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css --> --}}
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+    <body class="container">
+            <div class="button">
+                <br>
+                <a class="btn btn-secondary" href="/"><i class="fa fa-plus"></i> Back to Registration Page</a> 
+            </div>
+            <br>
+            <br>
+
+            {{!-- <div> --}}
+                <table >
+                    <thead>
+                        <tr>
+                            <th>Pull Request Id</th>
+                            <th>Email</th>
+                            <th>Tracking Environment</th>
+                            <th>Validation Script</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each list}}
+                            <tr class="row">
+                                <td >{{this.pullRequestId}}</td>
+                                <td >{{this.email}}</td>
+                                <td >{{this.trackingEnvironment}}</td>
+                                <td >{{this.validationScript}}</td>
+                                {{!-- <td class="col">
+                                    <a href="/course/{{this._id}}"> Edit </a>
+                                    <a href="/course/delete/{{this._id}}" onclick="return confirm('Are you sure to delete this record ?');"> Delete </a>
+                                </td> --}}
+                            </tr>
+                        {{/each}}
+                    </tbody>
+                 </table>
+            {{!-- </div> --}}
+</body>
+</html>
+
+
